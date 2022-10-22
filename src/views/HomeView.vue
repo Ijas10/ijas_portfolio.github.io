@@ -2,7 +2,6 @@
 import IntroPic from "../components/IntroPicComponent.vue";
 import TheNavbar from "../components/TheNavbar.vue";
 
-
 export default {
   data() {
     return {
@@ -23,11 +22,11 @@ export default {
       setTimeout(() => (this.delayed = !this.delayed), 800);
     },
   },
-  methods : {
+  methods: {
     changeUrl1() {
-      this.$router.push('/projects')
-    }
-  }
+      this.$router.push("/projects");
+    },
+  },
 };
 </script>
 
@@ -53,7 +52,9 @@ export default {
               >Pit Solutions</a
             >.
           </p>
-          <button class="checkoutBtn" @click="changeUrl1">Check out my projects!</button>
+          <button class="checkoutBtn" @click="changeUrl1">
+            Check out my projects!
+          </button>
         </div>
       </div>
     </Transition>
@@ -106,6 +107,7 @@ export default {
   width: 240px;
   height: 58px;
   font-family: "myFirstFont";
+  cursor: pointer;
 }
 .paraIntro {
   color: #8892b0;
